@@ -27,7 +27,7 @@ router.put("/api/burgers/:id", function(req, res) {
     var condition = "id = " + req.params.id;
     console.log("Condition", condition);
     burger.updateOne({ devoured: req.body.devoured }, condition, function(result){
-        if (result, changedRows === 0) {
+        if (result.changedRows === 0) {
             return res.status(404).end();
         } else {
             res.status(200).end();
@@ -35,11 +35,11 @@ router.put("/api/burgers/:id", function(req, res) {
     });
 });
 
-router.delete(condition, function(req, res) {
+router.delete("/api/burgers/:id", function(req, res) {
     var condition = "id = " + req.params.id;
     console.log("Condition", condition);
     burger.deleteOne(condition, function(result) {
-        if (result, changedRows === 0) {
+        if (result.changedRows === 0) {
             return res.status(404).end();
         } else {
             res.status(200).end();
