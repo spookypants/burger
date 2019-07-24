@@ -8,4 +8,4 @@ This app allows a user to visit a virtual restuarant (Gabe's Ballin' Burger Bar)
 ![Burger Bar](https://i.imgur.com/vgL2Mhg.png)
 
 ### Created By
-..* Gabe [@spookygabe](https://twitter.com/spookygabe)
+  * Gabe [@spookygabe](https://twitter.com/spookygabe)
