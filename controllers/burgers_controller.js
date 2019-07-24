@@ -3,6 +3,8 @@ var burger = require("../models/burger.js");
 
 var router = express.Router();
 
+
+// Get Route
 router.get("/", function(req, res) {
     burger.selectAll(function(data) {
         var hdbrsObj = {
@@ -13,6 +15,7 @@ router.get("/", function(req, res) {
     });
 });
 
+// Post Route
 router.post("/api/burgers", function(req, res) {
     burger.insertOne(
         ["burger_name", "devoured"],
